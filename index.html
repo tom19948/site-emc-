@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Monde Vert - Justice Environnementale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3d2f;
+      --background: #f4f4f4;
+      --card-bg: #ffffff;
+      --text: #222;
+      --muted: #777;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      position: relative;
+      height: 300px;
+      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1&ipt=e453bef6c3dfc8950ac2750dd961f39d2ab681b26df50ad49debdaf831b40ec2') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #e9e9e9;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+      padding: 8px 15px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--primary);
+      color: white;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    main {
+      flex: 3;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    .article-card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .article-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: var(--primary);
+    }
+
+    .article-card p {
+      line-height: 1.7;
+      margin-top: 15px;
+    }
+
+    .article-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-section {
+      background-color: #fff;
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .sidebar-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-section ul li {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Le Monde Vert</h1>
+      <p>Justice environnementale & société</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Écologie</a>
+    <a href="#">Société</a>
+    <a href="#">Opinions</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <main>
+        <div class="article-card">
+            <!-- Remplace le lien ci-dessous par l'URL de ton image -->
+            <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image personnalisée pour la justice environnementale">
+            <h2>Justice environnementale : un combat pour l'équité et la planète</h2>          
+        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement et de l'écologie. Il découle de la prise en compte de l'environnement et des services écosystémiques qu'il permet comme du bien commun.</p>
+        <p>Dans de nombreuses régions du monde, les communautés les plus vulnérables sont les premières exposées à la pollution, aux risques climatiques et à la dégradation des ressources naturelles.</p>
+        <p>En France comme ailleurs, des mouvements citoyens, des ONG et des scientifiques plaident pour une meilleure prise en compte de ces inégalités dans les politiques publiques.</p>
+        <p>L’objectif : que la transition écologique ne soit pas seulement verte, mais aussi juste.</p>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>Les plus lus</h3>
+        <ul>
+          <li>Climat : les jeunes en première ligne</li>
+          <li>Pollution de l’air : le vrai coût sanitaire</li>
+          <li>Les procès contre les multinationales vertes</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>À la une</h3>
+        <ul>
+          <li>Autoroute A69 : résistances locales</li>
+          <li>Justice climatique : nouvelles mobilisations</li>
+          <li>Le droit à un environnement sain reconnu</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Opinions</h3>
+        <ul>
+          <li>“L'écologie punitive” : mythe ou réalité ?</li>
+          <li>Justice sociale et justice environnementale</li>
+          <li>Le rôle des médias face à l'urgence</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 Le Monde Vert. Tous droits réservés.
+  </footer>
+</body>
+</html>
