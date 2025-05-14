@@ -27,7 +27,7 @@
     header {
       position: relative;
       height: 300px;
-      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1') center/cover no-repeat;
+      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1&ipt=e453bef6c3dfc8950ac2750dd961f39d2ab681b26df50ad49debdaf831b40ec2') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -66,7 +66,7 @@
       padding: 15px 0;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 1000;
     }
 
     nav a {
@@ -188,6 +188,10 @@
       color: var(--muted);
       margin-top: 60px;
     }
+
+    .anchor {
+      scroll-margin-top: 100px;
+    }
   </style>
 </head>
 <body>
@@ -200,43 +204,63 @@
   </header>
 
   <nav>
-    <a href="#accueil">Accueil</a>
     <a href="#ecologie">Écologie</a>
     <a href="#societe">Société</a>
     <a href="#opinions">Opinions</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container" id="accueil">
+  <div class="container">
     <main>
-      <div class="article-card" id="ecologie">
-        <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image personnalisée pour la justice environnementale">
+      <div class="article-card anchor" id="ecologie">
+        <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image justice environnementale">
         <h2>Justice environnementale : un combat pour l'équité et la planète</h2>
-        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement et de l'écologie...</p>
+        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement. Il découle de la reconnaissance de l’environnement comme bien commun.</p>
+        <p>En France comme ailleurs, des ONG, scientifiques et citoyens plaident pour que la transition écologique soit aussi juste que verte.</p>
 
-        <h3 id="societe">Des tribunaux au cœur du combat</h3>
-        <p>Alors que les catastrophes écologiques se multiplient, les tribunaux deviennent des lieux de combat...</p>
+        <h3>Des tribunaux au cœur du combat</h3>
+        <p>Les procès climatiques se multiplient : en 2021, l’État français a été condamné pour inaction climatique dans l’« affaire du siècle ».</p>
+        <p><strong>Comment ?</strong> En s’appuyant sur les lois, les ONG demandent réparations ou changements de politique.</p>
+        <p><strong>Pourquoi ?</strong> Parce que les victimes de la crise écologique sont souvent sans voix ni pouvoir d’action.</p>
 
         <div class="quote-block">
-          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint...
+          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint.
         </div>
 
-        <p>Aujourd’hui, la justice environnementale ne se limite plus à punir...</p>
+        <p>La justice devient un levier citoyen pour défendre notre avenir commun.</p>
+
+        <div class="captioned-image">
+          <img src="https://www.greenpeace.fr/wp-content/uploads/2021/02/GP0STU9Z9.jpg" alt="Manifestation Affaire du Siècle">
+          <small>Manifestation devant le tribunal administratif de Paris lors du procès pour l’affaire du siècle (2021) – Crédit : DR</small>
+        </div>
 
         <div class="author">Par Léa Morin</div>
       </div>
 
-      <div class="article-card" id="opinions">
+      <div class="article-card anchor" id="societe">
+        <h2>Société & Inégalités climatiques</h2>
+        <p>Les populations les plus touchées par le dérèglement climatique sont souvent les moins responsables. La justice environnementale lutte pour réparer ces inégalités.</p>
+      </div>
+
+      <div class="article-card anchor" id="opinions">
         <h2>Opinions</h2>
+        <p>“L'écologie punitive” : mythe ou réalité ? La question divise. Ce débat soulève l’enjeu de concilier contraintes écologiques et justice sociale.</p>
+      </div>
+
+      <div class="article-card anchor" id="contact">
+        <h2>Contact & Sources</h2>
+        <p>Pour en savoir plus :</p>
         <ul>
-          <li><strong>“L'écologie punitive”</strong> : mythe ou réalité ?</li>
-          <li><strong>Justice sociale</strong> et justice environnementale</li>
-          <li><strong>Le rôle des médias</strong> face à l'urgence</li>
+          <li><a href="https://www.un.org/fr/climatechange" target="_blank">ONU - Changement climatique</a></li>
+          <li><a href="https://www.greenpeace.fr" target="_blank">Greenpeace France</a></li>
+          <li><a href="https://notreaffaireatous.org" target="_blank">Notre Affaire à Tous</a></li>
+          <li><a href="https://www.lemonde.fr/planete/article/2015/12/04/faux-proces-monsanto-france-devant-les-tribunaux-la-justice-environnementale-en-action_4824634_3244.html" target="_blank">Le Monde - Procès Monsanto</a></li>
+          <li><a href="https://www.lemonde.fr/planete/article/2021/02/03/l-affaire-du-siecle-la-justice-reconnait-la-responsabilite-de-l-etat-dans-l-inaction-climatique_6068695_3244.html" target="_blank">Le Monde - Affaire du Siècle</a></li>
         </ul>
       </div>
     </main>
 
-    <aside class="sidebar" id="contact">
+    <aside class="sidebar">
       <div class="sidebar-section">
         <h3>Les plus lus</h3>
         <ul>
