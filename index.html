@@ -13,10 +13,6 @@
       --muted: #777;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -64,9 +60,6 @@
       justify-content: center;
       gap: 25px;
       padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     nav a {
@@ -162,6 +155,7 @@
       border-left: 4px solid var(--primary);
       padding: 20px;
       margin-bottom: 30px;
+      scroll-margin-top: 100px; /* pour un bon positionnement après clic */
     }
 
     .sidebar-section h3 {
@@ -188,10 +182,6 @@
       color: var(--muted);
       margin-top: 60px;
     }
-
-    .anchor {
-      scroll-margin-top: 100px;
-    }
   </style>
 </head>
 <body>
@@ -204,64 +194,44 @@
   </header>
 
   <nav>
-    <a href="#ecologie">Écologie</a>
-    <a href="#societe">Société</a>
-    <a href="#opinions">Opinions</a>
-    <a href="#contact">Contact</a>
+    <a href="#sidebar-plus-lus">Écologie</a>
+    <a href="#sidebar-a-la-une">Société</a>
+    <a href="#sidebar-opinions">Opinions</a>
+    <a href="#sources">Sources</a>
+    <a href="#">Contact</a>
   </nav>
 
   <div class="container">
     <main>
-      <div class="article-card anchor" id="ecologie">
-        <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image justice environnementale">
+      <div class="article-card">
+        <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image personnalisée pour la justice environnementale">
         <h2>Justice environnementale : un combat pour l'équité et la planète</h2>
-        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement. Il découle de la reconnaissance de l’environnement comme bien commun.</p>
-        <p>En France comme ailleurs, des ONG, scientifiques et citoyens plaident pour que la transition écologique soit aussi juste que verte.</p>
+        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement et de l'écologie. Il découle de la prise en compte de l'environnement et des services écosystémiques qu'il permet comme du bien commun.</p>
+        <p>Dans de nombreuses régions du monde, les communautés les plus vulnérables sont les premières exposées à la pollution, aux risques climatiques et à la dégradation des ressources naturelles.</p>
+        <p>En France comme ailleurs, des mouvements citoyens, des ONG et des scientifiques plaident pour une meilleure prise en compte de ces inégalités dans les politiques publiques.</p>
+        <p>L’objectif : que la transition écologique ne soit pas seulement verte, mais aussi juste.</p>
 
         <h3>Des tribunaux au cœur du combat</h3>
-        <p>Les procès climatiques se multiplient : en 2021, l’État français a été condamné pour inaction climatique dans l’« affaire du siècle ».</p>
-        <p><strong>Comment ?</strong> En s’appuyant sur les lois, les ONG demandent réparations ou changements de politique.</p>
-        <p><strong>Pourquoi ?</strong> Parce que les victimes de la crise écologique sont souvent sans voix ni pouvoir d’action.</p>
+        <p>Alors que les catastrophes écologiques se multiplient, les tribunaux deviennent des lieux de combat pour les citoyens, associations et ONG qui dénoncent les responsables de la crise environnementale.</p>
+
+        <p>La justice environnementale s’est imposée comme un outil de lutte. En 2021, l’État français a été condamné dans l’« affaire du siècle » pour inaction climatique, une victoire symbolique qui a marqué les esprits.</p>
+
+        <p><strong>COMMENT ?</strong> Ces actions s’appuient sur des lois nationales, européennes ou internationales, comme l’Accord de Paris ou les droits humains. Elles demandent souvent des réparations ou des changements de politique.</p>
+
+        <p><strong>POURQUOI ?</strong> Parce que les victimes des dégâts écologiques (populations locales, générations futures, biodiversité) ont rarement les moyens de se défendre. La justice devient alors un levier de mobilisation citoyenne et politique.</p>
 
         <div class="quote-block">
-          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint.
+          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint, eurodéputée écologiste et cofondatrice de Notre Affaire à Tous.
         </div>
 
-        <p>La justice devient un levier citoyen pour défendre notre avenir commun.</p>
-
-        <div class="captioned-image">
-          <img src="https://www.greenpeace.fr/wp-content/uploads/2021/02/GP0STU9Z9.jpg" alt="Manifestation Affaire du Siècle">
-          <small>Manifestation devant le tribunal administratif de Paris lors du procès pour l’affaire du siècle (2021) – Crédit : DR</small>
-        </div>
+        <p>Aujourd’hui, la justice environnementale ne se limite plus à punir : elle incite les pouvoirs publics à agir. C’est une forme de pression légitime et pacifique pour contraindre les décideurs à respecter leurs engagements climatiques. Face à l’urgence, elle devient une voix pour ceux qu’on n’entend pas : les forêts, les rivières, l’air qu’on respire.</p>
 
         <div class="author">Par Léa Morin</div>
-      </div>
-
-      <div class="article-card anchor" id="societe">
-        <h2>Société & Inégalités climatiques</h2>
-        <p>Les populations les plus touchées par le dérèglement climatique sont souvent les moins responsables. La justice environnementale lutte pour réparer ces inégalités.</p>
-      </div>
-
-      <div class="article-card anchor" id="opinions">
-        <h2>Opinions</h2>
-        <p>“L'écologie punitive” : mythe ou réalité ? La question divise. Ce débat soulève l’enjeu de concilier contraintes écologiques et justice sociale.</p>
-      </div>
-
-      <div class="article-card anchor" id="contact">
-        <h2>Contact & Sources</h2>
-        <p>Pour en savoir plus :</p>
-        <ul>
-          <li><a href="https://www.un.org/fr/climatechange" target="_blank">ONU - Changement climatique</a></li>
-          <li><a href="https://www.greenpeace.fr" target="_blank">Greenpeace France</a></li>
-          <li><a href="https://notreaffaireatous.org" target="_blank">Notre Affaire à Tous</a></li>
-          <li><a href="https://www.lemonde.fr/planete/article/2015/12/04/faux-proces-monsanto-france-devant-les-tribunaux-la-justice-environnementale-en-action_4824634_3244.html" target="_blank">Le Monde - Procès Monsanto</a></li>
-          <li><a href="https://www.lemonde.fr/planete/article/2021/02/03/l-affaire-du-siecle-la-justice-reconnait-la-responsabilite-de-l-etat-dans-l-inaction-climatique_6068695_3244.html" target="_blank">Le Monde - Affaire du Siècle</a></li>
-        </ul>
       </div>
     </main>
 
     <aside class="sidebar">
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-plus-lus">
         <h3>Les plus lus</h3>
         <ul>
           <li>Climat : les jeunes en première ligne</li>
@@ -270,12 +240,32 @@
         </ul>
       </div>
 
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-a-la-une">
         <h3>À la une</h3>
         <ul>
           <li>Autoroute A69 : résistances locales</li>
           <li>Justice climatique : nouvelles mobilisations</li>
           <li>Le droit à un environnement sain reconnu</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section" id="sidebar-opinions">
+        <h3>Opinions</h3>
+        <ul>
+          <li>“L'écologie punitive” : mythe ou réalité ?</li>
+          <li>Justice sociale et justice environnementale</li>
+          <li>Le rôle des médias face à l'urgence</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section" id="sources">
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://www.un.org/fr/climatechange" target="_blank">Nations Unies - Climat</a></li>
+          <li><a href="https://www.greenpeace.fr" target="_blank">Greenpeace France</a></li>
+          <li><a href="https://notreaffaireatous.org" target="_blank">Notre Affaire à Tous</a></li>
+          <li><a href="https://www.lemonde.fr/planete/article/2015/12/04/faux-proces-monsanto-france-devant-les-tribunaux-la-justice-environnementale-en-action_4824634_3244.html" target="_blank">Le Monde - Procès Monsanto</a></li>
+          <li><a href="https://www.lemonde.fr/planete/article/2021/02/03/l-affaire-du-siecle-la-justice-reconnait-la-responsabilite-de-l-etat-dans-l-inaction-climatique_6068695_3244.html" target="_blank">Le Monde - Affaire du Siècle</a></li>
         </ul>
       </div>
     </aside>
