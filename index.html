@@ -13,6 +13,10 @@
       --muted: #777;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -23,7 +27,7 @@
     header {
       position: relative;
       height: 300px;
-      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1') center/cover no-repeat;
+      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1&ipt=e453bef6c3dfc8950ac2750dd961f39d2ab681b26df50ad49debdaf831b40ec2') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -60,6 +64,9 @@
       justify-content: center;
       gap: 25px;
       padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
@@ -102,15 +109,8 @@
 
     .article-card h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2em;
+      font-size: 2em;
       color: var(--primary);
-      margin-bottom: 20px;
-    }
-
-    .article-card h3 {
-      color: var(--primary);
-      font-size: 1.4em;
-      margin-top: 30px;
     }
 
     .article-card p {
@@ -118,27 +118,19 @@
       margin-top: 15px;
     }
 
-    .highlight-block {
-      background-color: #eef7f0;
-      padding: 12px 20px;
-      border-left: 4px solid var(--primary);
-      margin: 20px 0;
-      font-weight: bold;
+    .article-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
     .quote-block {
-      background-color: #f2f2f2;
+      background-color: #eef7f0;
       border-left: 4px solid var(--primary);
       padding: 15px 20px;
       margin: 25px 0;
       font-style: italic;
       color: #333;
-    }
-
-    .article-image {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
     }
 
     .author {
@@ -179,37 +171,11 @@
       color: var(--muted);
       margin-top: 60px;
     }
-
-    .sources {
-      margin-top: 50px;
-    }
-
-    .sources h4 {
-      color: var(--primary);
-      border-left: 4px solid var(--primary);
-      padding-left: 10px;
-    }
-
-    .sources ul {
-      list-style-type: disc;
-      padding-left: 25px;
-      line-height: 1.6;
-    }
-
-    .sources ul li a {
-      color: var(--text);
-      text-decoration: underline;
-    }
-
-    .sources ul li a:hover {
-      color: var(--primary);
-    }
-
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="accueil">
     <div>
       <h1>Le Monde Vert</h1>
       <p>Justice environnementale & société</p>
@@ -217,58 +183,34 @@
   </header>
 
   <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Écologie</a>
-    <a href="#">Société</a>
-    <a href="#">Opinions</a>
-    <a href="#">Contact</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#ecologie">Écologie</a>
+    <a href="#societe">Société</a>
+    <a href="#opinions">Opinions</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <div class="container">
     <main>
-      <div class="article-card">
+      <div class="article-card" id="ecologie">
         <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image personnalisée pour la justice environnementale">
         <h2>Justice environnementale : un combat pour l'équité et la planète</h2>
+        <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement et de l'écologie...</p>
 
-        <p><strong>Le concept de justice environnementale</strong> applique les théories de la justice au champ de l'environnement et de l'écologie. Il découle de la prise en compte de l'environnement et des services écosystémiques comme du bien commun.</p>
-
-        <p>Dans de nombreuses régions du monde, les communautés les plus vulnérables sont les premières exposées à la pollution, aux risques climatiques et à la dégradation des ressources naturelles.</p>
-
-        <p>En France comme ailleurs, des mouvements citoyens, des ONG et des scientifiques plaident pour une meilleure prise en compte de ces inégalités dans les politiques publiques.</p>
-
-        <p>L’objectif : que la transition écologique ne soit pas seulement verte, mais aussi juste.</p>
-
-        <h3>Des tribunaux au cœur du combat</h3>
-
-        <p>Alors que les catastrophes écologiques se multiplient, les tribunaux deviennent des lieux de combat pour les citoyens, associations et ONG qui dénoncent les responsables de la crise environnementale.</p>
-
-        <p>La justice environnementale s’est imposée comme un outil de lutte. En 2021, l’État français a été condamné dans l’« affaire du siècle » pour inaction climatique, une victoire symbolique qui a marqué les esprits.</p>
-
-        <div class="highlight-block">📌 COMMENT ? Ces actions s’appuient sur des lois nationales, européennes ou internationales, comme l’Accord de Paris ou les droits humains.</div>
-        <div class="highlight-block">❓ POURQUOI ? Parce que les victimes des dégâts écologiques ont rarement les moyens de se défendre.</div>
+        <h3 id="societe">Des tribunaux au cœur du combat</h3>
+        <p>Alors que les catastrophes écologiques se multiplient...</p>
 
         <div class="quote-block">
-          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint, eurodéputée écologiste et cofondatrice de Notre Affaire à Tous.
+          « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint...
         </div>
 
-        <p>Aujourd’hui, la justice environnementale ne se limite plus à punir : elle incite les pouvoirs publics à agir. C’est une forme de pression légitime et pacifique pour contraindre les décideurs à respecter leurs engagements climatiques. Face à l’urgence, elle devient une voix pour ceux qu’on n’entend pas : les forêts, les rivières, l’air qu’on respire.</p>
-
-        <div class="sources">
-          <h4>Sources</h4>
-          <ul>
-            <li><a href="https://www.un.org/fr/climatechange" target="_blank">ONU - Changements climatiques</a></li>
-            <li><a href="https://www.greenpeace.fr" target="_blank">Greenpeace France</a></li>
-            <li><a href="https://notreaffaireatous.org" target="_blank">Notre Affaire à Tous</a></li>
-            <li><a href="https://www.lemonde.fr/planete/article/2015/12/04/faux-proces-monsanto-france-devant-les-tribunaux-la-justice-environnementale-en-action_4824634_3244.html" target="_blank">Le Monde - Faux procès contre Monsanto</a></li>
-            <li><a href="https://www.lemonde.fr/planete/article/2021/02/03/l-affaire-du-siecle-la-justice-reconnait-la-responsabilite-de-l-etat-dans-l-inaction-climatique_6068695_3244.html" target="_blank">Le Monde - L'affaire du siècle</a></li>
-          </ul>
-        </div>
+        <p>Aujourd’hui, la justice environnementale ne se limite plus à punir...</p>
 
         <div class="author">Par Léa Morin</div>
       </div>
     </main>
 
-    <aside class="sidebar">
+    <aside class="sidebar" id="opinions">
       <div class="sidebar-section">
         <h3>Les plus lus</h3>
         <ul>
@@ -298,7 +240,7 @@
     </aside>
   </div>
 
-  <footer>
+  <footer id="contact">
     &copy; 2025 Le Monde Vert. Tous droits réservés.
   </footer>
 </body>
