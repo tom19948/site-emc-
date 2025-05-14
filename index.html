@@ -27,7 +27,7 @@
     header {
       position: relative;
       height: 300px;
-      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1&ipt=e453bef6c3dfc8950ac2750dd961f39d2ab681b26df50ad49debdaf831b40ec2') center/cover no-repeat;
+      background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpivot.quebec%2Fwp-content%2Fuploads%2F2023%2F08%2FIMG_0281-scaled-e1664207134118-1.jpg&f=1&nofb=1') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -133,6 +133,23 @@
       color: #333;
     }
 
+    .captioned-image {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .captioned-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .captioned-image small {
+      display: block;
+      color: #666;
+      margin-top: 8px;
+      font-size: 0.9em;
+    }
+
     .author {
       margin-top: 30px;
       font-weight: bold;
@@ -175,7 +192,7 @@
 </head>
 <body>
 
-  <header id="accueil">
+  <header>
     <div>
       <h1>Le Monde Vert</h1>
       <p>Justice environnementale & société</p>
@@ -190,7 +207,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
+  <div class="container" id="accueil">
     <main>
       <div class="article-card" id="ecologie">
         <img class="article-image" src="https://cdn.greenpeace.fr/site/uploads/2022/03/GP0STT4JB.jpg" alt="Image personnalisée pour la justice environnementale">
@@ -198,7 +215,7 @@
         <p>Le concept de justice environnementale applique les théories de la justice au champ de l'environnement et de l'écologie...</p>
 
         <h3 id="societe">Des tribunaux au cœur du combat</h3>
-        <p>Alors que les catastrophes écologiques se multiplient...</p>
+        <p>Alors que les catastrophes écologiques se multiplient, les tribunaux deviennent des lieux de combat...</p>
 
         <div class="quote-block">
           « En portant plainte, on oblige les responsables à rendre des comptes », témoigne Marie Toussaint...
@@ -208,9 +225,18 @@
 
         <div class="author">Par Léa Morin</div>
       </div>
+
+      <div class="article-card" id="opinions">
+        <h2>Opinions</h2>
+        <ul>
+          <li><strong>“L'écologie punitive”</strong> : mythe ou réalité ?</li>
+          <li><strong>Justice sociale</strong> et justice environnementale</li>
+          <li><strong>Le rôle des médias</strong> face à l'urgence</li>
+        </ul>
+      </div>
     </main>
 
-    <aside class="sidebar" id="opinions">
+    <aside class="sidebar" id="contact">
       <div class="sidebar-section">
         <h3>Les plus lus</h3>
         <ul>
@@ -228,19 +254,10 @@
           <li>Le droit à un environnement sain reconnu</li>
         </ul>
       </div>
-
-      <div class="sidebar-section">
-        <h3>Opinions</h3>
-        <ul>
-          <li>“L'écologie punitive” : mythe ou réalité ?</li>
-          <li>Justice sociale et justice environnementale</li>
-          <li>Le rôle des médias face à l'urgence</li>
-        </ul>
-      </div>
     </aside>
   </div>
 
-  <footer id="contact">
+  <footer>
     &copy; 2025 Le Monde Vert. Tous droits réservés.
   </footer>
 </body>
